@@ -68,3 +68,11 @@ Lung Cancer: YES , NO.
 ##How to Generate Report
 
 In the command line, using Make to render the report. The .gitignore and .gitkeep files will make sure the desired files are saved and the rest are discarded. 
+
+##Renv  how to synchronize your package repository
+
+The link to my repository on GitHub is: https://github.com/AnyueRae/INFO-550-Final-Project-Renv. Fork and clone the repository so that you can make changes to the code. Confirm that the `renv` package is installed by running `"renv" %in% row.names(installed.packages())`. Then, restore the package library using `renv::restore()`. After the changes are made, run `renv::snapshot()` to update the lock file. Finally, make a new commit, and push them to GitHub. 
+
+
+
+
