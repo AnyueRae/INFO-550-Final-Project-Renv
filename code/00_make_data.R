@@ -1,10 +1,3 @@
-install.packages('lablled')
-install.packages('gtsummary')
-install.packages('here')
-library(labelled)
-library(gtsummary)
-library(here)
-
 here::i_am(
   "code/00_make_data.R"
 )

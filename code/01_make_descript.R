@@ -1,15 +1,3 @@
-install.packages('lablled')
-install.packages('gtsummary')
-install.packages('knitr')
-install.packages('kableExtra')
-install.packages('ggplot2')
-install.packages('here')
-library(labelled)
-library(gtsummary)
-library(knitr)
-library(kableExtra)
-library(ggplot2)
-library(here)
 
 
 here::i_am(

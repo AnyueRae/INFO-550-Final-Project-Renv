@@ -22,9 +22,9 @@ install:
 PROJECTFILES = report.Rmd code/03_render_report.R data descript regression 
 RENVFILES = renv.lock renv/activate.R renv/settings.dcf
 
-project_image: $(PROJECTFILES) $(RENVFILES) $(Dockerfile)
-	docker build -t project_image_fin . 
-	touch $@
+AnyueRae/project_image:
+	docker build -t project_image_3 . 
+	
 	
 final_report/report.html:
-	docker run -v "/$$(pwd)"/final_report:/project/final_report AnyueRae/fin
+	docker run -v "/$$(pwd)/final_report":/project/final_report AnyueRae/project_image
