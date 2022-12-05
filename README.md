@@ -75,6 +75,6 @@ The link to my repository on GitHub is: https://github.com/AnyueRae/INFO-550-Fin
 
 ##Docker
 
-Use docker build -t project_image . to build the image. Run make final_report/report.html to build the compiled final report.
+The link for docker:https://hub.docker.com/repository/docker/anyuerae/project_image. Use docker build -t project_image . to build the image. Run make final_report/report.html to build the compiled final report.
 
 
