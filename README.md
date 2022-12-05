@@ -73,6 +73,8 @@ In the command line, using Make to render the report. The .gitignore and .gitkee
 
 The link to my repository on GitHub is: https://github.com/AnyueRae/INFO-550-Final-Project-Renv. Fork and clone the repository so that you can make changes to the code. Confirm that the `renv` package is installed by running `"renv" %in% row.names(installed.packages())`. Then, restore the package library using `renv::restore()`. After the changes are made, run `renv::snapshot()` to update the lock file. Finally, make a new commit, and push them to GitHub. 
 
+##Docker
 
+Docker image is available on: . Use docker build -t project_image . to build the image. Run make final_report/report.html to build the compiled final report.
 
 

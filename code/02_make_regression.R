@@ -1,9 +1,17 @@
+install.packages('here')
+install.packages('expss')
+install.packages('lablled')
+install.packages('gtsummary')
+install.packages('knitr')
+install.packages('kableExtra')
+install.packages('ggplot2')
 library(labelled)
 library(gtsummary)
 library(knitr)
 library(kableExtra)
 library(ggplot2)
 library(expss)
+library(here)
 
 
 here::i_am(
