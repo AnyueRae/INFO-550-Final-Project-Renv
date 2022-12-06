@@ -32,10 +32,5 @@ RUN mkdir data
 COPY data data 
 COPY code code 
 COPY report.rmd .
-RUN mkdir -p renv
-COPY .Rprofile .Rprofile
-#COPY renv/activate.R renv/activate.R
-#COPY renv/settings.dcf renv/settings.dcf
-#RUN Rscript -e "renv::restore(prompt = FALSE)"
 RUN mkdir final_project
-CMD make && mv report.html final_report
+CMD make && mv report.html final_project

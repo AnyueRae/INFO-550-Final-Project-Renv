@@ -5,7 +5,7 @@ here::i_am(
 
 survey <- read.csv(here::here("data/survey_lung_cancer.csv"))
 
-var_label(survey) <- list(
+labelled::var_label(survey) <- list(
   GENDER = "Gender of the Patient",
   AGE = "Age of the Patient",
   SMOKING = "Smoking status",

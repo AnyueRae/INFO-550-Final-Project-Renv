@@ -30,7 +30,7 @@ Lung Cancer: YES , NO.
 #Loading data
 
 ```{r, load-data}
-here::i_am("report.Rmd")
+here::i_am("report.rmd")
 data <- readRDS(
   file = here::here("output/cleaned_data.rds")
 )

@@ -4,6 +4,9 @@ here::i_am(
   "code/01_make_descript.R"
 )
 
+library(dplyr)
+library(gtsummary)
+
 data <- readRDS(file = here::here("output/cleaned_data.rds"))
 
 tableA <- data %>% 
