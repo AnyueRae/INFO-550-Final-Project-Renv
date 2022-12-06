@@ -1,13 +1,14 @@
-report.html: report.Rmd code/03_render_report.R data descript regression
+report.html: report.rmd code/03_render_report.R data descript regression
 	Rscript code/03_render_report.R
 
+.PHONY: data
 data:
 	Rscript code/00_make_data.R
 	
-descript:
+descript: data
 	Rscript code/01_make_descript.R
 	
-regression:
+regression: data
 	Rscript code/02_make_regression.R
 	
 .PHONY: clean
@@ -27,4 +28,4 @@ AnyueRae/project_image:
 	
 	
 final_report/report.html:
-	docker run -v "/$$(pwd)/final_report":/project/final_report AnyueRae/project_image
+	docker run -v "/$$(pwd)/final_project":/project/final_project anyuerae/project_image
