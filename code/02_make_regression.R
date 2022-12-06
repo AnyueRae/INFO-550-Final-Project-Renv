@@ -1,6 +1,8 @@
 here::i_am(
   "code/02_make_regression.R"
 )
+library(ggplot2)
+library(gtsummary)
 
 data <- readRDS(file = here::here("output/cleaned_data.rds"))
 
